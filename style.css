@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+}
+
+.div1, .div2, .div3{
+    height: 100vh;
+}
+
+.div1{
+    background-color: pink;
+}
+
+.div2{
+    /* background-color: salmon; */
+}
+
+.square{
+   
+        
+        width: 60%;
+        height: 100%;
+        float: left;
+
+}
+.square img{
+   position: relative;
+   z-index: 9999;
+}
+.text{
+    width: 40%;
+    float: left;
+}
+.text h1{
+    padding: 35% 0;
+    width: 51%;
+    opacity: 10;
+}
+.square img{
+    width: 300px;
+    height: 600px;
+    transform: rotate(90deg);
+}
+
+.square2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+/* ARHSAD */
+
+.div3{
+    float: left;
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mobile-image{
+    float: left;
+    width: 41%;
+}
+.content-image{
+    float: left;
+    width: 59%;
+}
+.images{
+    float: left;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    height: 300px; 
+    align-items: center;
+}
+.img01{
+    float: left;
+    /* opacity: 0; */
+    position: absolute;
+    width: 20%;
+}
+.img02{
+    float: left;
+    /* opacity: 0; */
+    position: absolute;
+    width: 20%;
+}
+.img03{
+    float: left;
+    /* opacity: 0; */
+    position: absolute;
+    width: 20%;
+}
+.img04{
+    float: left;
+    /* opacity: 0; */
+    position: absolute;
+    width: 20%;
+}
+.img05{
+    float: left;
+    /* opacity: 0; */
+    position: absolute;
+    width: 20%;
+}
+.img06{
+    float: left;
+    /* opacity: 0; */
+    position: absolute;
+    width: 20%;
+}
+.images img{
+    float: left;
+    width: 100%;
+    scale: 0;
+}
