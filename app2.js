@@ -21,7 +21,7 @@ const tl = gsap.timeline({
     }
 })
 tl.to(".square img", { x: "40vw", duration: 5000})
-.to(".text h1", {opacity: 0, duration: 2000})
+.to(".text h3", {opacity: 0, duration: 2000})
     .to(".square img", { rotation: 0, duration: 3000});
 
 // gsap.to(".square img", {
@@ -66,6 +66,25 @@ tl.to(".square img", { x: "40vw", duration: 5000})
 
 
 // ARSHAD
+
+const m1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".mobile-image img",
+        // start: "top 50%",
+        // end: "top 30%",
+        start: "center center",
+        end: "bottom top",
+        // rotation: 180,
+        scrub: true,
+        // toggleActions: "restart none none none",
+        pin: ".div3",
+
+        
+    }
+})
+m1.to(".mobile-image img", { x: "40vw", duration: 5000})
+.to(".cont h3", {opacity: 0, duration: 2000})
+    .to(".mobile-image img", { rotation: 0, duration: 3000});
 
 const fl = gsap.timeline({
     scrollTrigger: {
