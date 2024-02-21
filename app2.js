@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline({
     scrollTrigger: {
-        trigger: ".square img",
+        //trigger: ".square img",
         // start: "top 50%",
         // end: "top 30%",
         start: "center center",
@@ -11,18 +11,52 @@ const tl = gsap.timeline({
         // rotation: 180,
         scrub: true,
         // toggleActions: "restart none none none",
-        pin: ".div2",
-
-        // pinSpacing: "true",
+        pin: ".div3",
+        pinSpacing: "true",
         // toggleActions: "restart pause resume complete",
         // play pause resume reverse restart seset complete none
         // onEnter onLeave onEnterBack onLeaveBack
         // markers: true
     }
 })
-tl.to(".square img", { x: "40vw", duration: 5000})
-.to(".text h3", {opacity: 0, duration: 2000})
-    .to(".square img", { rotation: 0, duration: 3000});
+tl.to(".square img", { x: "41vw", duration: 4000})
+ .to(".text h1", {opacity: 0, duration: 3000})
+    .to(".square img", { rotation: 0, duration: 3000})
+    .to(".img01 img", { 
+        x: 750, 
+        scale: 1, 
+        duration: 3000, 
+    })
+    .to(".img02 img", {
+        x: 450,
+        y: 300,
+        scale: 1,
+        duration: 3000,
+    })
+    .to(".img03 img", {
+        x: 450,
+        y: -300,
+        scale: 1,
+        duration: 3000,
+    })
+    .to(".img04 img", {
+        x: -750,
+        scale: 1,
+        duration: 3000,
+    })
+    .to(".img05 img", {
+        x: -450,
+        y: 300,
+        scale: 1,
+        duration: 3000,
+    })
+    
+    .to(".img06 img", {
+        x: -450,
+        y: -300,
+        scale: 1,
+        duration: 3000,
+    });
 
 // gsap.to(".square img", {
 //     // x: "50vw",
@@ -67,76 +101,25 @@ tl.to(".square img", { x: "40vw", duration: 5000})
 
 // ARSHAD
 
-const m1 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".mobile-image img",
-        // start: "top 50%",
-        // end: "top 30%",
-        start: "center center",
-        end: "bottom top",
-        // rotation: 180,
-        scrub: true,
-        // toggleActions: "restart none none none",
-        pin: ".div3",
 
-        
-    }
-})
-m1.to(".mobile-image img", { x: "40vw", duration: 5000})
-.to(".cont h3", {opacity: 0, duration: 2000})
-    .to(".mobile-image img", { rotation: 0, duration: 3000});
 
-const fl = gsap.timeline({
-    scrollTrigger: {
-        // trigger: ".square2",
-        start: "center center",
-        end: "bottom top",
-        scrub: true,
-        //toggleActions: "restart none none none",
-        pin: ".div3",
-        pinSpacing: "true",
-        // toggleActions: "restart pause resume complete",
-        // play pause resume reverse restart seset complete none
-        // onEnter onLeave onEnterBack onLeaveBack
-        // markers: true
-    }
-})
+// const fl = gsap.timeline({
+//     scrollTrigger: {
+//         // trigger: ".square2",
+//         start: "center center",
+//         end: "bottom top",
+//         scrub: true,
+//         //toggleActions: "restart none none none",
+//         pin: ".div3",
+//         pinSpacing: "true",
+//         // toggleActions: "restart pause resume complete",
+//         // play pause resume reverse restart seset complete none
+//         // onEnter onLeave onEnterBack onLeaveBack
+//         // markers: true
+//     }
+// })
 
-fl.to(".img01 img", { 
-    x: 750, 
-    scale: 1, 
-    duration: 20, 
-})
-fl.to(".img02 img", {
-    x: 450,
-    y: 300,
-    scale: 1,
-    duration: 20,
-})
-fl.to(".img03 img", {
-    x: 450,
-    y: -300,
-    scale: 1,
-    duration: 20,
-})
-fl.to(".img04 img", {
-    x: -750,
-    scale: 1,
-    duration: 20,
-})
-fl.to(".img05 img", {
-    x: -450,
-    y: 300,
-    scale: 1,
-    duration: 20,
-})
 
-fl.to(".img06 img", {
-    x: -450,
-    y: -300,
-    scale: 1,
-    duration: 20,
-})
 
 
 
